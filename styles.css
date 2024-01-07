@@ -1,13 +1,79 @@
-#profile-pic {
-    display: block;
-    background-color: turquoise;
-    max-width: 400px;
-    max-height: 400px;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+section {
+    padding: 5em 0;
 }
 
 #hero {
-    background-color: paleturquoise ;
+    padding: 10em 0;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+}
+
+#splash {
+    margin: auto;
+    max-width: 1000px;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#profile-pic {
+    display: block;
+    background-color: turquoise;
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.home-menu {
+    width: 100%;
+    background-color: #2d3e50;
+    padding: 0.5em;
+}
+
+.home-menu ul {
+    float: right;
+}
+
+.pure-menu .pure-menu-heading {
+    color: white;
+}
+
+.pure-menu-heading, .pure-menu-link {
+    padding: 0.5em 1em;
+}
+
+#intro-header {
+    width: 50%;
+    padding: 2em 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#work {
+    background-color: #ffe0ac;
+}
+
+/* gallery */
+.pure-g > div {
+    box-sizing: border-box;
+}
+
+.gallery {
+    margin: auto;
+    max-width: 950px;
+}
+
+.gallery-img {
+    margin: 0 auto;
+    padding: 1em 0;
 }
