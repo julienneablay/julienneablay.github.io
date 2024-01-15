@@ -63,7 +63,7 @@ section {
     justify-content: center;
 }
 
-#work {
+#development {
     background-color: #ffe0ac;
 }
 
@@ -81,6 +81,11 @@ section {
     margin: 0 auto;
     padding: 0.5em 0;
     border-radius: 15%;
+}
+
+.image {
+    border: none;
+    background: none;
 }
 
 #about-splash {
