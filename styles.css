@@ -11,7 +11,7 @@ section {
     left: 0;
 }
 
-#splash {
+.splash {
     margin: auto;
     max-width: 1000px;
     top: 100px;
@@ -21,6 +21,10 @@ section {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.splash ul li {
+    text-align: left;
 }
 
 #profile-pic {
@@ -59,7 +63,7 @@ section {
     justify-content: center;
 }
 
-#work {
+#development {
     background-color: #ffe0ac;
 }
 
@@ -76,4 +80,18 @@ section {
 .gallery-img {
     margin: 0 auto;
     padding: 0.5em 0;
+    border-radius: 15%;
+}
+
+.image {
+    border: none;
+    background: none;
+}
+
+#about-splash {
+    padding: 2em;
+}
+
+#about {
+    background-color: aquamarine;
 }

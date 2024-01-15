@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,7 +15,10 @@
     <a href="#" class="pure-menu-heading pure-menu-link">J</a>
     <ul class="pure-menu-list">
         <li class="pure-menu-item">
-            <a href="#work" class="pure-menu-link">Work</a>
+            <a href="#development" class="pure-menu-link">Develop</a>
+        </li>
+        <li class="pure-menu-item">
+            <a href="#design" class="pure-menu-link">Design</a>
         </li>
         <li class="pure-menu-item">
             <a href="#about-me" class="pure-menu-link">About Me</a>
@@ -29,41 +34,145 @@
     <!-- Add the canvas background or just animated css-->
     <!-- Add my profile pic or a cool illustration to the right, -->
     <!-- Or maybe I don't need it! -->
-    <div id="splash" class="pure-g">
+    <div class="splash pure-g">
         <div id="intro-header" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
             <h1>Hi! I'm Julienne.</h1>
             <p class="tagline">
                 I craft fun experiences, from interactive applications to vibrant illustrations!
             </p>
         </div>
-        <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2"></div>
+        <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile"></div>
     </div>
 </section>
 
-<section id="work">
+<section id="development">
     <h2>Development</h2>
     <div class="pure-g gallery">
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/bespoke01.png" class="gallery-img pure-img" alt="Jacquie Lawson Bespoke Cards"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/jlaccessible01.png" class="gallery-img pure-img" alt="JL Product Accessibility Initiatives"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/modernanimals01.png" class="gallery-img pure-img" alt="Modern Animals Interactive Cards"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/bmacard01.png" class="gallery-img pure-img" alt="Blue Mountain/AG Interactive Cards & Games"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/smashups01.png" class="gallery-img pure-img" alt="Jacquie Lawson Ecards"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/christmas01.png" class="gallery-img pure-img" alt="Jacquie Lawson Notecards"></div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalBespoke" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-bespoke"><img src="img/thumbnails/bespoke01.png" class="gallery-img pure-img" alt="Jacquie Lawson Bespoke Cards"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalAccessible" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-accessible"><img src="img/thumbnails/jlaccessible01.png" class="gallery-img pure-img" alt="JL Product Accessibility Initiatives"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalModernAnimals" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-animals"><img src="img/thumbnails/modernanimals01.png" class="gallery-img pure-img" alt="Modern Animals Interactive Cards"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalGames" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-bma"><img src="img/thumbnails/bmacard01.png" class="gallery-img pure-img" alt="Blue Mountain/AG Interactive Cards & Games"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalSmashup" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-ecards"><img src="img/thumbnails/smashups01.png" class="gallery-img pure-img" alt="Jacquie Lawson Ecards"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalChristmas" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-christmas"><img src="img/thumbnails/christmas01.png" class="gallery-img pure-img" alt="Christmas Inline Videos"></button>
     </div>
 </section>
 
 <section id="design">
     <h2>Design</h2>
     <div class="pure-g gallery">
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/vtuber01.png" class="gallery-img pure-img" alt="Vtuber Stream UI"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/cookbook01.png" class="gallery-img pure-img" alt="Cookbook Fanzine"></div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/toracon01.png" class="gallery-img pure-img" alt="Tora-Con Booklet and Badges"></div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalOrion" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/vtuber01.png" class="gallery-img pure-img" alt="Vtuber Stream UI"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalZine" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/cookbook01.png" class="gallery-img pure-img" alt="Cookbook Fanzine"></button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalToracon" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/toracon01.png" class="gallery-img pure-img" alt="Tora-Con Booklet and Badges"></button>
     </div>
 </section>
 
-<section id="about-me">
+<section id="about">
     <h2>About Me</h2>
+    <div id="about-splash" class="splash pure-g">
+        <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile"></div>
+        <ul>
+            <li>A frontend developer with a specialty in graphic design and an interest in accessibility</li>
+            <li>Applications I use frequently: Adobe Creative Apps, Clip Studio Paint, Visual Studio Code</li>
+            <li>Favorite food: French fries and tinola soup</li>
+            <li>Hobbies: Drawing, journalling, games, & anime/manga</li>
+            <li>Favorite colors: orange and blue-green</li>
+        </ul>
+    </div>
 </section>
+
+<!--------Modals - Development--------->
+
+<div class="modal fade" id="modalBespoke" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAccessible" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalModernAnimals" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalGames" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalSmashup" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalChristmas" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Modals - Design--------->
+
+<div class="modal fade" id="modalOrion" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalZine" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalToracon" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-body">Hello World</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
