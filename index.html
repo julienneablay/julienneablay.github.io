@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
@@ -83,60 +83,235 @@
 <!--------Modals - Development--------->
 
 <div class="modal fade" id="modalBespoke" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        A customizable video card utilizing Vue.js, futurizing our product line of timeless Jacquie Lawson cards. Users choose a variety of options and custom words, resulting in their own bespoke video.<br>
+
+                        I handled the frontend functionality of Vue.js application and optimized and refactored it for future product types.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalAccessible" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        Initially a series of cards created in flash. Since the end of support for Flash, JLVideos were converted to HTML5 and create.js. To improve our user experience and follow WCAG standards, we created and implemented initiatives to make our JLVideos and pixi.js Notecards more accessible.<br>
+
+                        I steered the initiative and planning phases, auditing our cards and prioritizing features that would create the most impact and least amount of development cycles.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalModernAnimals" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        An interactive pixi.js experience with complex and interesting animations. Click on different parts of the scene and find the secret animations to reveal a custom message!<br>
+
+                        We took in complex animations from our Creative team, and utilized greensock or custom animated frames to animate the scene. We optimized sprites into as little spritesheets as possible.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalGames" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        Various HTML5 canvas games created with pixi.js and greensock. I assisted in the planning, task-managing, and architecturing process. I animated the ending animation with hearts falling attached to string.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalSmashup" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        Smashups are customized videos based on a user's selections from dropdown lists. With two smashup products I went through the process of rendering, transcoding, file handling, and uploading of thousands of video portions utilizing Python and workers to automate.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalChristmas" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        I handled the creation of various Christmas Inline Video Cards, videos combined with a fullscreen HTML5 canvas experience made with pixi.js and greensock.<br>
+                        We handled the architecture and created the initial user flow to help Creative and Business teams understand its process before development began.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -145,30 +320,114 @@
 <!------Modals - Design--------->
 
 <div class="modal fade" id="modalOrion" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        I designed the logo and stream UI layouts of vtuber Orion Escalus. I worked with Orion, going through various iterations of logo designs and layouts for the perfect design.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalZine" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        I worked on collections of volunteer run publications and collaboration projects. I worked as an artist and an editor in some, hanlding the transfer of artwork or copy to InDesign.<br>
+                        For two publications I worked as head organizer, working through various submissions, creating task timelines, and handled the supply and sending of physical merchandise to buyers.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="modalToracon" tabindex="-1" aria-labelledby="modal-bespoke" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="modal-body">Hello World</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <br>
+                <div class="modal-body pure-g">
+                    <div id="carouselExample" class="carousel slide pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/thumbnails/thumb1.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb2.png" class="d-block w-100" alt="test">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/thumbnails/thumb3.png" class="d-block w-100" alt="test">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    I have frequently volunteered for Tora-Con for several years. In 2015 I was Media Manager of RIT Anime Club and Tora-Con Operations, handling social media posts, physical posters, badges, and other printed supplies.<br>
+                    I initially designed the badges for 2015, and after graduating, continued to contribute to media team operations and acted as a contributing artists within the team.
+                </div>
             </div>
         </div>
     </div>
