@@ -95,3 +95,12 @@ section {
 #about {
     background-color: aquamarine;
 }
+
+.modal-header {
+    display: block;
+}
+
+.modal-header .btn-close {
+    width: 100%;
+    margin: 0 auto;
+}
