@@ -101,3 +101,10 @@ section {
     width: 100%;
     margin: 0 auto;
 }
+
+.modal-body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#modalBespoke {}
