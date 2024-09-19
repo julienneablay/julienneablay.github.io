@@ -25,7 +25,7 @@
             <a href="#about" class="pure-menu-link">About Me</a>
         </li>
         <li class="pure-menu-item">
-            <a href="./resume.pdf" target="_blank" class="pure-menu-link">Resume</a>
+            <a href="./resume.pdf" target="_blank" class="pure-menu-link resume-button">Resume</a>
         </li>
     </ul>
 </header>
@@ -47,7 +47,8 @@
 </section>
 
 <section id="development">
-    <h2>Development</h2>
+  <div class="section-wrap"> 
+    <h2 class="pure-u-1 section-title">Development</h2>
     <div class="pure-g gallery">
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalBespoke" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-bespoke"><img src="img/thumbnails/bespoke01.png" class="gallery-img pure-img" alt="Jacquie Lawson Bespoke Cards"></button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalAccessible" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-accessible"><img src="img/thumbnails/jlaccessible01.png" class="gallery-img pure-img" alt="JL Product Accessibility Initiatives"></button>
@@ -56,29 +57,34 @@
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalSmashup" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-ecards"><img src="img/thumbnails/smashups01.png" class="gallery-img pure-img" alt="Jacquie Lawson Ecards"></button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalChristmas" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-christmas"><img src="img/thumbnails/christmas01.png" class="gallery-img pure-img" alt="Christmas Inline Videos"></button>
     </div>
+  </div class="section-wrap">
 </section>
 
 <section id="design">
-    <h2>Design</h2>
+  <div class="section-wrap">  
+    <h2 class="pure-u-1 section-title">Design</h2>
     <div class="pure-g gallery">
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalOrion" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/vtuber01.png" class="gallery-img pure-img" alt="Vtuber Stream UI"></button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalZine" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/cookbook01.png" class="gallery-img pure-img" alt="Cookbook Fanzine"></button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalToracon" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image"><img src="img/thumbnails/toracon01.png" class="gallery-img pure-img" alt="Tora-Con Booklet and Badges"></button>
     </div>
+  </div>
 </section>
 
 <section id="about">
-    <h2>About Me</h2>
-    <div id="about-splash" class="splash pure-g">
-        <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile"></div>
-        <ul>
-            <li>Frontend developer with an interest in graphic design, illustration, and accessibility 👩🏻‍💻</li>
-            <li>Applications I use frequently: Adobe Creative Apps, Clip Studio Paint, Procreate, Visual Studio Code</li>
-            <li>Favorite drink: Bubble tea 🧋</li>
-            <li>Hobbies: Drawing, journalling, videogames, & anime/manga 📖</li>
-            <li>Favorite colors: orange 🟠 and sage green 🟢</li>
-        </ul>
+  <div id="about-splash" class="splash pure-g">
+    <h2 class="pure-u-1 section-title">About Me</h2>
+    <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile"></div>
+    <div id="about-header" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+      <ul>
+        <li>Frontend developer with an interest in graphic design, illustration, and accessibility 👩🏻‍💻</li>
+        <li>Applications I use frequently: Adobe Creative Apps, Clip Studio Paint, Procreate, Visual Studio Code</li>
+        <li>Favorite drink: Bubble tea 🧋</li>
+        <li>Hobbies: Drawing, journalling, videogames, & anime/manga 📖</li>
+        <li>Favorite colors: orange 🟠 and sage green 🟢</li>
+      </ul>
     </div>
+  </div>
 </section>
 
 <!--------Modals - Development--------->
@@ -112,8 +118,8 @@
                         </button>
                     </div>
                     <br>
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        A collection of customizable video cards utilizing Vue.js, futurizing our product line of timeless Jacquie Lawson cards. Users choose a variety of options and custom words, resulting in their own bespoke video.<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                        <p>A collection of customizable video cards utilizing Vue.js, futurizing our product line of timeless Jacquie Lawson cards. Users choose a variety of options and custom words, resulting in their own bespoke video.</p>
                         <a class="pure-button pure-button-primary" onclick="window.open('https://www.jacquielawson.com/card/a-tailor-made-birthday/3548732', '_blank')">Demo</a>
                     </div>
                 </div>
@@ -151,10 +157,10 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        Initially a series of cards created in flash. Since the end of support for Flash, JLVideos were converted to HTML5 and create.js. To improve our user experience and follow WCAG standards, we created and implemented initiatives to make our JLVideos and pixi.js Notecards more accessible.<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                        <p>Initially a series of cards created in flash. Since the end of support for Flash, JLVideos were converted to HTML5 and create.js. To improve our user experience and follow WCAG standards, we created and implemented initiatives to make our JLVideos and pixi.js Notecards more accessible.</p>
 
-                        I steered the initiative and planning phases, auditing our cards and prioritizing features that would create the most impact and least amount of development cycles.<br>
+                        <p>I steered the initiative and planning phases, auditing our cards and prioritizing features that would create the most impact and least amount of development cycles.</p>
                         <a class="pure-button pure-button-primary" onclick="window.open('https://www.jacquielawson.com/card/a-winter-scene/3475686', '_blank')">Demo</a>
                     </div>
                 </div>
@@ -192,10 +198,10 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        An interactive pixi.js experience with complex and interesting animations. Click on different parts of the scene and find the secret animations to reveal a custom message!<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                        <p>An interactive pixi.js experience with complex and interesting animations. Click on different parts of the scene and find the secret animations to reveal a custom message!</p>
 
-                        We took in complex animations from our Creative team, and utilized greensock or custom animated frames to animate the scene. We optimized sprites into as little spritesheets as possible.<br>
+                        <p>We took in complex animations from our Creative team, and utilized greensock or custom animated frames to animate the scene. We optimized sprites into as little spritesheets as possible.</p>
                         <a class="pure-button pure-button-primary" onclick="window.open('https://www.jacquielawson.com/card/elephant-encounter/3525350', '_blank')">Demo</a>                        
                     </div>
                 </div>
@@ -233,8 +239,8 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                      Various HTML5 canvas games created with pixi.js and greensock. I assisted in the planning, task-managing, and architecturing process. I animated the ending animation with hearts falling attached to string.<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                      <p>Various HTML5 canvas games created with pixi.js and greensock. I assisted in the planning, task-managing, and architecturing process. I animated the ending animation with hearts falling attached to string.</p>
                       <a class="pure-button pure-button-primary" onclick="window.open('https://www.bluemountain.com/ecards/valentines-day/candy-cottage-hidden-objects-game/card-3529056', '_blank')">Demo</a>
                     </div>
                 </div>
@@ -272,8 +278,8 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                      Smashups are customized videos based on a user's selections from dropdown lists. With two smashup products I went through the process of rendering, transcoding, file handling, and uploading of thousands of video portions utilizing Python and workers to automate.<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                      <p>Smashups are customized videos based on a user's selections from dropdown lists. With two smashup products I went through the process of rendering, transcoding, file handling, and uploading of thousands of video portions utilizing Python and workers to automate.</p>
                       <a class="pure-button pure-button-primary" onclick="window.open('https://www.americangreetings.com/ecards/love/hamster-love-soul-song-personalize-lyrics/card-3515654', '_blank')">Demo</a>
                     </div>
                 </div>
@@ -311,9 +317,11 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        I handled the creation of various Christmas Inline Video Cards, videos combined with a fullscreen HTML5 canvas experience made with pixi.js and greensock.<br>
-                        We handled the architecture and created the initial user flow to help Creative and Business teams understand its process before development began.<br>
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                        <p>I handled the creation of various Christmas Inline Video Cards, videos combined with a fullscreen HTML5 canvas experience made with pixi.js and greensock.</p>
+                        
+                        <p>We handled the architecture and created the initial user flow to help Creative and Business teams understand its process before development began.</p>
+                        
                         <a class="pure-button pure-button-primary" onclick="window.open('https://www.americangreetings.com/ecards/christmas/christmas-magic-personalize/card-3540532', '_blank')">Demo</a>
                     </div>
                 </div>
@@ -353,8 +361,8 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                      I designed the logo and stream UI layouts of vtuber Orion Escalus. I worked with Orion, going through various iterations of logo designs and layouts for the perfect design.
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                      <p>I designed the logo and stream UI layouts of vtuber Orion Escalus. I worked with Orion, going through various iterations of logo designs and layouts for the perfect design.</p>
                     </div>
                 </div>
             </div>
@@ -391,9 +399,9 @@
                         </button>
                     </div>
 
-                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                        I worked on collections of volunteer run publications and collaboration projects. I worked as an artist and an editor in some, hanlding the transfer of artwork or copy to InDesign.<br>
-                        For two publications I worked as head organizer, working through various submissions, creating task timelines, and handled the supply and sending of physical merchandise to buyers.
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                        <p>I worked on collections of volunteer run publications and collaboration projects. I worked as an artist and an editor in some, handling the transfer of artwork or copy to InDesign.</p>
+                        <p>For two publications I worked as head organizer, working through various submissions, creating task timelines, and handled the supply and sending of physical merchandise to buyers.</p>
                     </div>
                 </div>
             </div>
@@ -430,8 +438,10 @@
                         </button>
                     </div>
 
-                    I have frequently volunteered for Tora-Con for several years. I was Media Manager of RIT Anime Club and Tora-Con Operations, handling social media posts, physical posters, badges, and other printed supplies.<br>
-                    I initially designed the badges for 2015, and after graduating, continued to contribute to media team operations and acted as a contributing artists within the team.
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 modal-text">
+                      <p>I have frequently volunteered for Tora-Con for several years. I was Media Manager of RIT Anime Club and Tora-Con Operations, handling social media posts, physical posters, badges, and other printed supplies.</p>
+                      <p>I initially designed the badges for 2015, and after graduating, continued to contribute to media team operations and acted as a contributing artists within the team.</p>
+                    </div>
                 </div>
             </div>
         </div>
