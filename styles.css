@@ -3,7 +3,12 @@ section {
     min-height: 100vh;
 }
 
-#hero {
+.section-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+#hero, #about, #design {
     padding: 10em 0;
     overflow: hidden;
     width: 100%;
@@ -87,6 +92,15 @@ section {
 
 #about-splash {
     padding: 2em;
+    margin: 0 auto;
+}
+
+#about-header {
+    width: 50%;
+    padding: 2em 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 #about {
@@ -105,6 +119,19 @@ section {
 .modal-body {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.modal-text {
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+.modal-dialog .modal-content {
+    position: fixed;
+    height: max-content;
+    max-width: 800px;
+    margin: auto;
+    inset: 0;
 }
 
 #modalBespoke {}
