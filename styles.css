@@ -1,3 +1,7 @@
+header {
+    background-color: rgba(255,255,255,0.75);
+}
+
 section {
     padding: 5em 0;
     min-height: 100vh;
@@ -29,14 +33,88 @@ section {
     text-align: left;
 }
 
+#orange-fruit {
+    position: relative;
+}
+
+.leaf {
+    position: absolute;
+    width: 8em;
+    height: 6em;
+    border-radius: 99% 0;
+}
+
+#back-leaf {
+    background-color: #58a82d;
+    left: 13em;
+    rotate: 45deg;
+}
+
+#front-leaf {
+    background-color: #479228;
+    top: -4em;
+    left: 12em;
+}
+
+.eyes {
+    position: absolute;
+    background-color: black;
+    width: 2em;
+    height: 2em;
+}
+
+#eye-left {
+    
+    border-radius: 50%;
+    top: 11em;
+    left: 9em;
+}
+
+#eye-right {
+    position: absolute;
+    background-color: black;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 10em;
+    left: 2em;
+}
+
+#mouth {
+    position: absolute;
+    color: black;
+    width: 3em;
+    height: 3em;
+    rotate: 98deg;
+    font-size: 4em;
+    top: 3.2em;
+    left: -0.8em;
+}
+
 #profile-pic {
     display: block;
-    background-color: turquoise;
     max-width: 300px;
     max-height: 300px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: solid 9px;
+    border-color: hsl(33deg 100% 50%);
+    background-image: linear-gradient(
+      225deg,
+      hsl(47deg 88% 64%) 0%,
+    hsl(45deg 89% 62%) 8%,
+    hsl(44deg 90% 60%) 17%,
+    hsl(43deg 90% 59%) 25%,
+    hsl(41deg 91% 57%) 33%,
+    hsl(40deg 92% 55%) 42%,
+    hsl(39deg 92% 54%) 50%,
+    hsl(38deg 94% 53%) 58%,
+    hsl(37deg 95% 52%) 67%,
+    hsl(36deg 96% 52%) 75%,
+    hsl(35deg 98% 51%) 83%,
+    hsl(34deg 99% 51%) 92%,
+    hsl(33deg 100% 50%) 100%)
 }
 
 .home-menu {
@@ -57,8 +135,13 @@ section {
     padding: 0.5em 1em;
 }
 
+@media screen and (max-width: 450px) {
+    #home-button {
+        display: none;
+    }
+}
+
 #intro-header {
-    width: 50%;
     padding: 2em 2em;
     display: flex;
     flex-flow: column;
@@ -96,7 +179,6 @@ section {
 }
 
 #about-header {
-    width: 50%;
     padding: 2em 2em;
     display: flex;
     flex-flow: column;
@@ -133,5 +215,3 @@ section {
     margin: auto;
     inset: 0;
 }
-
-#modalBespoke {}

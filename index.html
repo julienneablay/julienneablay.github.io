@@ -13,7 +13,7 @@
 <body>
 
 <header class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-    <a href="#" class="pure-menu-heading pure-menu-link">J</a>
+    <a href="#" id="home-button" class="pure-menu-heading pure-menu-link">J</a>
     <ul class="pure-menu-list">
         <li class="pure-menu-item">
             <a href="#development" class="pure-menu-link">Develop</a>
@@ -32,9 +32,6 @@
 
 
 <section id="hero">
-    <!-- Add the canvas background or just animated css-->
-    <!-- Add my profile pic or a cool illustration to the right, -->
-    <!-- Or maybe I don't need it! -->
     <div class="splash pure-g">
         <div id="intro-header" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
             <h1>Hi! I'm Julienne.</h1>
@@ -42,13 +39,21 @@
                 I craft fun experiences, from interactive applications to vibrant illustrations!
             </p>
         </div>
-        <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile"></div>
+        <div id="orange-fruit" aria-hidden="true">
+          <p id="front-leaf" class="leaf"></p>
+          <p id="back-leaf" class="leaf"></p>
+          <div id="profile-pic" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 profile">
+            <p id="eye-right" class="eyes"></p>
+            <p id="eye-left" class="eyes"></p>
+            <p id="mouth">)</p>
+          </div>
+        </div> 
     </div>
 </section>
 
 <section id="development">
+  <h2 class="pure-u-1 section-title">Development</h2>
   <div class="section-wrap"> 
-    <h2 class="pure-u-1 section-title">Development</h2>
     <div class="pure-g gallery">
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalBespoke" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-bespoke"><img src="img/thumbnails/bespoke01.png" class="gallery-img pure-img" alt="Jacquie Lawson Bespoke Cards"></button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#modalAccessible" class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image" id="button-accessible"><img src="img/thumbnails/jlaccessible01.png" class="gallery-img pure-img" alt="JL Product Accessibility Initiatives"></button>
