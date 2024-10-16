@@ -208,7 +208,7 @@ section {
     text-align: justify;
 }
 
-.modal-text button:focus {
+.link-button:focus {
     background-color: #004785;
     outline: thick double #004785;
 }
