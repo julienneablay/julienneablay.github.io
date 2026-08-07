@@ -21,7 +21,7 @@ header {
 
 #home-button {
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: #b9ef9c;
 }
 
 section {
@@ -43,6 +43,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#hero, #design {
+    background: #fffbed;
+background: linear-gradient(188deg, rgba(255, 251, 237, 1) 0%, rgba(255, 244, 201, 1) 100%);
 }
 
 .splash {
@@ -130,7 +135,7 @@ section {
 
 #css-orange {
     border: solid 9px;
-    border-color: hsl(33deg 100% 50%);
+    border-color: #ff8c00;
     background-image: linear-gradient(
       225deg,
       hsl(47deg 88% 64%) 0%,
@@ -158,6 +163,10 @@ section {
     float: right;
 }
 
+.menu-link {
+    color: black;
+}
+
 .pure-menu .pure-menu-heading {
     color: black;
 }
@@ -179,8 +188,8 @@ section {
     justify-content: center;
 }
 
-#development {
-    background-color: #ffe0ac;
+#development, #about {
+    background: linear-gradient(13deg, rgba(158, 209, 134, 1) 5%, rgba(185, 239, 156, 1) 100%);
 }
 
 /* gallery */
@@ -214,10 +223,6 @@ section {
     display: flex;
     flex-flow: column;
     justify-content: center;
-}
-
-#about {
-    background-color: aquamarine;
 }
 
 .modal-header {
